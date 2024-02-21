@@ -1,0 +1,23 @@
+<svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Bar Chart 2">
+<g id="Vector">
+<path d="M11.6667 11.2499H16.3333V22.9166H11.6667V11.2499Z" stroke="url(#paint0_linear_102_170079)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.8333 6.58325H24.5V22.9166H19.8333V6.58325Z" stroke="url(#paint1_linear_102_170079)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.5 17.0833H8.16667V22.9166H3.5V17.0833Z" stroke="url(#paint2_linear_102_170079)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_102_170079" x1="3.5" y1="22.9166" x2="27.023" y2="17.4602" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1975FF"/>
+<stop offset="1" stop-color="#33A9FF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_102_170079" x1="3.5" y1="22.9166" x2="27.023" y2="17.4602" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1975FF"/>
+<stop offset="1" stop-color="#33A9FF"/>
+</linearGradient>
+<linearGradient id="paint2_linear_102_170079" x1="3.5" y1="22.9166" x2="27.023" y2="17.4602" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1975FF"/>
+<stop offset="1" stop-color="#33A9FF"/>
+</linearGradient>
+</defs>
+</svg>
