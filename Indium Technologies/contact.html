@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contact us</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230429200657">
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper active-page-contact">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<a href="#"><picture><source data-srcset="img/logo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/logo.jpg" alt="logo"></picture></a>
+				</div>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="about.html" class="menu__link">About Us</a></li>
+							<li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
+							<li class="menu__item"><a href="careers.html" class="menu__link">Careers</a></li>
+							<li class="menu__item"><a href="contact.html" class="menu__link button">Contact us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main data-fp class="page">
+			<section data-fp-section class="contact-main">
+				<div class="contact-main__container">
+					<form class="contact-main__form" action="" method="POST">
+						<div class="contact-main__form-header">
+							<h3 class="contact-main__form-header-title">Contact us</h3>
+							<div class="contact-main__form-header-text">
+								<p>For further questions, including partnership opportunities, please email hello@indium-technologies.com or contact using our contact form.</p>
+							</div>
+						</div>
+						<div class="contact-main__form-flex">
+							<div class="contact-main__form-flex-wrapper">
+								<label for="contact-fullname">Full Name</label>
+								<input type="text" name="form[fullname]" id="contact-fullname" data-error="Error" placeholder="Full name" class="input">
+							</div>
+							<div class="contact-main__form-flex-wrapper">
+								<label for="contact-email">Email</label>
+								<input type="email" name="form[email]" id="contact-email" data-error="Error" placeholder="Email" class="input">
+							</div>
+						</div>
+						<label for="contact-textarea">How can we help you?</label>
+						<textarea name="form[textarea]" id="contact-textarea" cols="30" rows="10" data-error="Error" placeholder="I want to say that..." class="input"></textarea>
+						<button type="submit" class="button">Send message</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230429200657"></script>
+</body>
+
+</html>
