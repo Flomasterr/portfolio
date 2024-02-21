@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>ShopPage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231027132532">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="120" data-scroll-show="1000" class="header">
+			<div class="header__top">
+				<div class="header__container-top">
+					<div class="header__top-text">
+						<p>Use code FIRST50 for a 50% discount on your first order!</p>
+					</div>
+					<a href="cart.html" class="header__top-cart _icon-cart"></a>
+					<a href="#" class="header__top-user _icon-user"></a>
+				</div>
+			</div>
+			<div class="header__main">
+				<div class="header__container-main">
+					<a href="" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.jpg" alt=""></picture></a>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list" data-spollers="991.98" data-one-spoller>
+								<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+								<li class="menu__item">
+									<button type="button" data-spoller data-spoller-close class="menu__item-opener _icon-arrow-down">Plants</button>
+									<ul class="menu__list-sub-menu sub-menu">
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 1</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 2</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 3</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 4</a></li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<button type="button" data-spoller data-spoller-close class="menu__item-opener _icon-arrow-down">Planters</button>
+									<ul class="menu__list-sub-menu sub-menu">
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 1</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 2</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 3</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 4</a></li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<button type="button" data-spoller data-spoller-close class="menu__item-opener _icon-arrow-down">Essentials</button>
+									<ul class="menu__list-sub-menu sub-menu">
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 1</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 2</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 3</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 4</a></li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<button type="button" data-spoller data-spoller-close class="menu__item-opener _icon-arrow-down">Services</button>
+									<ul class="menu__list-sub-menu sub-menu">
+										<li class="sub-menu__item"><a href="shop.html" class="sub-menu__link">Shop</a></li>
+										<li class="sub-menu__item"><a href="product.html" class="sub-menu__link">Product</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 3</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 4</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__main-search" data-da=".menu__list, 991.98">
+						<input autocomplete="off" type="search" name="form[]" data-error="Error" placeholder="Search" class="input _icon-search">
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="hero">
+				<div class="hero__image">
+					<picture><source srcset="img/shop/hero/banner.webp" type="image/webp"><img src="img/shop/hero/banner.jpg" alt=""></picture>
+				</div>
+			</section>
+			<section class="goods">
+				<div class="goods__container">
+					<aside class="goods__filter filter" data-spollers="991.98">
+						<div class="filter__categories">
+							<button type="button" data-spoller data-spoller-close class="filter__categories-title _icon-arrow-down">Categories</button>
+							<div class="filter__categories-wrapper">
+								<div class="filter__category">
+									<label for="all">All Categories</label>
+									<input type="radio" name="all" id="all" value="*" checked="checked">
+								</div>
+								<div class="filter__category">
+									<label for="indor">Indoor Plants</label>
+									<input type="radio" name="all" id="indor" value=".indor">
+								</div>
+								<div class="filter__category">
+									<label for="outdoor">Outdoor Plants</label>
+									<input type="radio" name="all" id="outdoor" value=".outdoor">
+								</div>
+								<div class="filter__category">
+									<label for="medicinal">Medicinal Plants</label>
+									<input type="radio" name="all" id="medicinal" value=".medicinal">
+								</div>
+							</div>
+						</div>
+						<div class="filter__price">
+							<button type="button" data-spoller data-spoller-close class="filter__price-title _icon-arrow-down">Price</button>
+							<div id="range" class="filter__price-wrapper">
+								<input autocomplete="off" type="text" name="form[]" data-error="error" placeholder="from" class="input" id="price-start">
+								<input autocomplete="off" type="text" name="form[]" data-error="error" placeholder="to" class="input" id="price-end">
+							</div>
+						</div>
+						<div class="filter__include">
+							<button type="button" data-spoller data-spoller-close class="filter__include-title _icon-arrow-down">Include</button>
+							<div class="filter__include-checkbox-wrapper">
+								<div class="filter__checkbox">
+									<input id="c_1" class="checkbox__input" type="checkbox" value=".planter">
+									<label for="c_1" class="checkbox__label"><span class="checkbox__text">Planter</span></label>
+								</div>
+								<div class="filter__checkbox">
+									<input id="c_2" class="checkbox__input" type="checkbox" value=".combo">
+									<label for="c_2" class="checkbox__label"><span class="checkbox__text">Combo</span></label>
+								</div>
+								<div class="filter__checkbox">
+									<input id="c_3" class="checkbox__input" type="checkbox" value=".flowers">
+									<label for="c_3" class="checkbox__label"><span class="checkbox__text">Flowers</span></label>
+								</div>
+								<div class="filter__checkbox">
+									<input id="c_4" class="checkbox__input" type="checkbox" value=".service">
+									<label for="c_4" class="checkbox__label"><span class="checkbox__text">Service</span></label>
+								</div>
+							</div>
+						</div>
+					</aside>
+					<div class="goods__cards cards" data-iso-items>
+						<div class="cards__card planter indor" data-iso-item>
+							<div class="cards__card-image"><picture><source srcset="img/shop/goods/1.webp" type="image/webp"><img src="img/shop/goods/1.jpg" alt="" img></picture></div>
+							<div class="cards__info">
+								<div class="cards__info-plant-name">Jade Terrarium</div>
+								<div class="cards__info-plant-price">$ 150</div>
+							</div>
+							<a href="" class="cards__card-link">Buy</a>
+						</div>
+						<div class="cards__card combo outdoor" data-iso-item>
+							<div class="cards__card-image"><picture><source srcset="img/shop/goods/2.webp" type="image/webp"><img src="img/shop/goods/2.jpg" alt="" img></picture></div>
+							<div class="cards__info">
+								<div class="cards__info-plant-name">Ficus Benjamina</div>
+								<div class="cards__info-plant-price">$ 250</div>
+							</div>
+							<a href="" class="cards__card-link">Buy</a>
+						</div>
+						<div class="cards__card flowers medicinal" data-iso-item>
+							<div class="cards__card-image"><picture><source srcset="img/shop/goods/3.webp" type="image/webp"><img src="img/shop/goods/3.jpg" alt="" img></picture></div>
+							<div class="cards__info">
+								<div class="cards__info-plant-name">Syngorium Plant</div>
+								<div class="cards__info-plant-price">$ 350</div>
+							</div>
+							<a href="" class="cards__card-link">Buy</a>
+						</div>
+						<div class="cards__card service indor" data-iso-item>
+							<div class="cards__card-image"><picture><source srcset="img/shop/goods/4.webp" type="image/webp"><img src="img/shop/goods/4.jpg" alt="" img></picture></div>
+							<div class="cards__info">
+								<div class="cards__info-plant-name">Cactus Peruvianus</div>
+								<div class="cards__info-plant-price">$ 450</div>
+							</div>
+							<a href="" class="cards__card-link">Buy</a>
+						</div>
+						<div class="cards__card planter outdoor" data-iso-item>
+							<div class="cards__card-image"><picture><source srcset="img/shop/goods/5.webp" type="image/webp"><img src="img/shop/goods/5.jpg" alt="" img></picture></div>
+							<div class="cards__info">
+								<div class="cards__info-plant-name">Chlorophytum Lemon</div>
+								<div class="cards__info-plant-price">$ 550</div>
+							</div>
+							<a href="" class="cards__card-link">Buy</a>
+						</div>
+						<div class="cards__card combo medicinal" data-iso-item>
+							<div class="cards__card-image"><picture><source srcset="img/shop/goods/6.webp" type="image/webp"><img src="img/shop/goods/6.jpg" alt="" img></picture></div>
+							<div class="cards__info">
+								<div class="cards__info-plant-name">Aloe Rauhii</div>
+								<div class="cards__info-plant-price">$ 650</div>
+							</div>
+							<a href="" class="cards__card-link">Buy</a>
+						</div>
+						<div class="cards__card flowers indor" data-iso-item>
+							<div class="cards__card-image"><picture><source srcset="img/shop/goods/7.webp" type="image/webp"><img src="img/shop/goods/7.jpg" alt="" img></picture></div>
+							<div class="cards__info">
+								<div class="cards__info-plant-name">Areca Palm</div>
+								<div class="cards__info-plant-price">$ 750</div>
+							</div>
+							<a href="" class="cards__card-link">Buy</a>
+						</div>
+						<div class="cards__card service outdoor" data-iso-item>
+							<div class="cards__card-image"><picture><source srcset="img/shop/goods/8.webp" type="image/webp"><img src="img/shop/goods/8.jpg" alt="" img></picture></div>
+							<div class="cards__info">
+								<div class="cards__info-plant-name">Sansevieria Black</div>
+								<div class="cards__info-plant-price">$ 350</div>
+							</div>
+							<a href="" class="cards__card-link">Buy</a>
+						</div>
+						<div class="cards__card planter medicinal" data-iso-item>
+							<div class="cards__card-image"><picture><source srcset="img/shop/goods/1.webp" type="image/webp"><img src="img/shop/goods/1.jpg" alt="" img></picture></div>
+							<div class="cards__info">
+								<div class="cards__info-plant-name">Jade Terrarium</div>
+								<div class="cards__info-plant-price">$ 350</div>
+							</div>
+							<a href="" class="cards__card-link">Buy</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__main">
+				<div class="footer__container-main">
+					<div class="footer__logo"><img src="img/footer/footer-logo.svg" alt=""></div>
+					<div class="footer__spollers" data-spollers="991.98" data-one-spoller>
+						<div class="footer__links">
+							<button type="button" data-spoller data-spoller-close class="footer__links-title _icon-arrow-down">Quick Links</button>
+							<ul class="footer__links-body">
+								<li><a href="">About Us</a></li>
+								<li><a href="">Bulk Order</a></li>
+								<li><a href="">Gifts</a></li>
+								<li><a href="">Organic Garden</a></li>
+							</ul>
+						</div>
+						<div class="footer__links">
+							<button type="button" data-spoller data-spoller-close class="footer__links-title _icon-arrow-down">Legal</button>
+							<ul class="footer__links-body">
+								<li><a href="">T&C</a></li>
+								<li><a href="">Privacy Policy</a></li>
+								<li><a href="">Returns</a></li>
+								<li><a href="">Shipping</a></li>
+								<li><a href="">Cancellation</a></li>
+							</ul>
+						</div>
+						<div class="footer__links">
+							<button type="button" data-spoller data-spoller-close class="footer__links-title _icon-arrow-down">Support</button>
+							<ul class="footer__links-body">
+								<li><a href="">FAQs</a></li>
+								<li><a href="">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__badge"><img src="img/footer/badge.svg" alt=""></div>
+					<div class="footer__social">
+						<div class="footer__social-text">
+							<p>© 2021 Plan A Plant</p>
+							<p>All Rights Reserved</p>
+						</div>
+						<div class="footer__social-links">
+							<a href="" class="_icon-facebook"></a>
+							<a href="" class="_icon-twitter"></a>
+							<a href="" class="_icon-instagram"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__container-bottom">
+					<div class="footer__bottom-text">
+						<p>We facilitate your payments through trusted gateways</p>
+					</div>
+					<div class="footer__bottom-logos">
+						<img src="img/footer/payment-logos/visa.svg" alt="">
+						<img src="img/footer/payment-logos/mastercard.svg" alt="">
+						<img src="img/footer/payment-logos/amex.svg" alt="">
+						<img src="img/footer/payment-logos/rupay.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20231027132532"></script>
+</body>
+
+</html>

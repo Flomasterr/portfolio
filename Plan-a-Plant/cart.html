@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cart</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231027132532">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="120" data-scroll-show="1000" class="header">
+			<div class="header__top">
+				<div class="header__container-top">
+					<div class="header__top-text">
+						<p>Use code FIRST50 for a 50% discount on your first order!</p>
+					</div>
+					<a href="cart.html" class="header__top-cart _icon-cart"></a>
+					<a href="#" class="header__top-user _icon-user"></a>
+				</div>
+			</div>
+			<div class="header__main">
+				<div class="header__container-main">
+					<a href="" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.jpg" alt=""></picture></a>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list" data-spollers="991.98" data-one-spoller>
+								<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+								<li class="menu__item">
+									<button type="button" data-spoller data-spoller-close class="menu__item-opener _icon-arrow-down">Plants</button>
+									<ul class="menu__list-sub-menu sub-menu">
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 1</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 2</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 3</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 4</a></li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<button type="button" data-spoller data-spoller-close class="menu__item-opener _icon-arrow-down">Planters</button>
+									<ul class="menu__list-sub-menu sub-menu">
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 1</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 2</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 3</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 4</a></li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<button type="button" data-spoller data-spoller-close class="menu__item-opener _icon-arrow-down">Essentials</button>
+									<ul class="menu__list-sub-menu sub-menu">
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 1</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 2</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 3</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 4</a></li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<button type="button" data-spoller data-spoller-close class="menu__item-opener _icon-arrow-down">Services</button>
+									<ul class="menu__list-sub-menu sub-menu">
+										<li class="sub-menu__item"><a href="shop.html" class="sub-menu__link">Shop</a></li>
+										<li class="sub-menu__item"><a href="product.html" class="sub-menu__link">Product</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 3</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 4</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__main-search" data-da=".menu__list, 991.98">
+						<input autocomplete="off" type="search" name="form[]" data-error="Error" placeholder="Search" class="input _icon-search">
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="cart-items">
+				<div class="cart-items__container">
+					<div class="cart-items__main">
+						<h2 class="cart-items__title title">Your Cart Items</h2>
+						<div class="cart-items__table">
+							<div class="cart-items__table-header">
+								<span class="cart-items__column _first-column">Product</span>
+								<span class="cart-items__column">Price</span>
+								<span class="cart-items__column">Quantity</span>
+								<span class="cart-items__column">Total</span>
+							</div>
+							<div class="swiper">
+								<ul class="cart-items__list swiper-wrapper">
+									<li class="cart-items__item swiper-slide">
+										<span class="cart-items__item-product cart-items__column _first-column">
+											<div class="cart-items__item-product-image-wrapper"><picture><source srcset="img/cart/1.webp" type="image/webp"><img src="img/cart/1.jpg" class="cart-items__item-product-image" alt=""></picture></div>
+											<div class="cart-items__item-product-text">
+												<h3 class="cart-items__item-product-name">Plant Name</h3>
+												<button type="button" class="cart-items__item-product-remove">Remove</button>
+											</div>
+										</span>
+										<span class="cart-items__item-price cart-items__column">$ 99</span>
+										<div data-quantity class="cart-items__item-quantity cart-items__column quantity">
+											<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+											<div class="quantity__input">
+												<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+											</div>
+											<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+										</div>
+										<span class="cart-items__item-total cart-items__column">$ 99.0</span>
+									</li>
+									<li class="cart-items__item swiper-slide">
+										<span class="cart-items__item-product cart-items__column _first-column">
+											<div class="cart-items__item-product-image-wrapper"><picture><source srcset="img/cart/2.webp" type="image/webp"><img src="img/cart/2.jpg" class="cart-items__item-product-image" alt=""></picture></div>
+											<div class="cart-items__item-product-text">
+												<h3 class="cart-items__item-product-name">Plant Name</h3>
+												<button type="button" class="cart-items__item-product-remove">Remove</button>
+											</div>
+										</span>
+										<span class="cart-items__item-price cart-items__column">$ 99</span>
+										<div data-quantity class="cart-items__item-quantity cart-items__column quantity">
+											<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+											<div class="quantity__input">
+												<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+											</div>
+											<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+										</div>
+										<span class="cart-items__item-total cart-items__column">$ 99.0</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="cart-items__total-price">
+							<div class="cart-items__total-price-subtotal">
+								<div class="cart-items__total-price-subtotal-text">Subtotal</div>
+								<div class="cart-items__total-price-subtotal-number">$ 99.0</div>
+							</div>
+							<div class="cart-items__total-price-shipping">
+								<div class="cart-items__total-price-shipping-text">Shipping</div>
+								<div class="cart-items__total-price-shipping-number">Flat Rate</div>
+							</div>
+							<div class="cart-items__total-price-total">
+								<div class="cart-items__total-price-total-text">Total</div>
+								<div class="cart-items__total-price-total-number">$ 99.0</div>
+							</div>
+						</div>
+					</div>
+					<div class="cart-items__login">Returning customer? <a href="#" class="cart-items__login-link">Click Here to Login.</a></div>
+				</div>
+			</section>
+			<section class="billing-details">
+				<div class="billing-details__container">
+					<form data-goto-error action="#" method="POST" class="billing-details__form form-billing" name="billing-form">
+						<div class="form-billing__main">
+							<div class="form-billing__main-inputs">
+								<h3 class="form-billing__title">Billing Details</h3>
+								<div class="form-billing__two-columns">
+									<div class="form-billing__input-wrapper">
+										<label for="i-1">First Name*</label>
+										<input type="text" name="billing-form[first-name]" data-required data-validate data-error="Enter First Name" placeholder="First Name" class="input" id="i-1">
+									</div>
+									<div class="form-billing__input-wrapper">
+										<label for="i-2">Last Name*</label>
+										<input type="text" name="billing-form[last-name]" data-required data-validate data-error="Enter Last Name" placeholder="Last Name" class="input" id="i-2">
+									</div>
+								</div>
+								<div class="form-billing__two-columns">
+									<div class="form-billing__input-wrapper">
+										<label for="i-3">Phone*</label>
+										<input type="tel" name="billing-form[phone]" data-required data-validate data-error="Enter Phone number" placeholder="Phone number" class="input" id="i-3">
+									</div>
+									<div class="form-billing__input-wrapper">
+										<label for="i-4">Email Address*</label>
+										<input type="email" name="billing-form[email]" data-required data-validate data-error="Enter E-mail" placeholder="E-mail" class="input" id="i-4">
+									</div>
+								</div>
+								<div class="form-billing__input-wrapper">
+									<label for="i-5">Street Address*</label>
+									<input type="text" name="billing-form[street-adress]" data-required data-validate data-error="Enter Street Address" placeholder="House No./ Apartment No./ Plot No." class="input" id="i-5">
+									<input type="text" name="billing-form[street-adress]" data-required data-validate data-error="Enter Street Address" placeholder="Street Name/ Locality" class="input" id="">
+								</div>
+								<div class="form-billing__two-columns">
+									<div class="form-billing__input-wrapper">
+										<label for="i-6">City*</label>
+										<input type="text" name="billing-form[city]" data-required data-validate data-error="Enter City" placeholder="City" class="input" id="i-6">
+									</div>
+									<div class="form-billing__input-wrapper">
+										<label for="i-7">State*</label>
+										<input type="text" name="billing-form[state]" data-required data-validate data-error="Enter State" placeholder="State" class="input" id="i-7">
+									</div>
+								</div>
+								<div class="form-billing__two-columns">
+									<div class="form-billing__input-wrapper">
+										<label for="i-8">Pincode*</label>
+										<input type="text" name="billing-form[pincode]" data-required data-validate data-error="Enter Pincode" placeholder="Pincode" class="input" id="i-8">
+									</div>
+									<div class="form-billing__input-wrapper">
+										<label for="i-9">Country*</label>
+										<input type="text" name="billing-form[country]" data-required data-validate data-error="Enter Country" placeholder="Country" class="input" id="i-9">
+									</div>
+								</div>
+							</div>
+							<div class="form-billing__main-pay-by">
+								<h3 class="form-billing__title">Pay Details</h3>
+								<div class="checkbox form-billing__main-pay-by-checkbox">
+									<input id="c_1" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="billing-form[pay-by]">
+									<label for="c_1" class="checkbox__label"><span class="checkbox__text">Pay by Razorpay Cards, NetBanking, Wallet & UPI</span></label>
+								</div>
+								<div class="form-billing__main-pay-by-description">
+									<p>Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our Privacy Policy</p>
+								</div>
+							</div>
+						</div>
+						<div class="form-billing__additional">
+							<div class="form-billing__additional-wrapper">
+								<div class="checkbox form-billing__additional-checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="billing-form[different-adress]">
+									<label for="c_2" class="checkbox__label"><span class="checkbox__text">Ship to a Different Address</span></label>
+								</div>
+								<div class="form-billing__input-wrapper">
+									<label for="i-10">Order notes (optional)</label>
+									<input type="text" name="billing-form[order-notes]" data-error="Error" placeholder="Order notes (optional)" class="input" id="i-10">
+								</div>
+							</div>
+							<button type="submit" class="button form-billing__submit-button">Place Order</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__main">
+				<div class="footer__container-main">
+					<div class="footer__logo"><img src="img/footer/footer-logo.svg" alt=""></div>
+					<div class="footer__spollers" data-spollers="991.98" data-one-spoller>
+						<div class="footer__links">
+							<button type="button" data-spoller data-spoller-close class="footer__links-title _icon-arrow-down">Quick Links</button>
+							<ul class="footer__links-body">
+								<li><a href="">About Us</a></li>
+								<li><a href="">Bulk Order</a></li>
+								<li><a href="">Gifts</a></li>
+								<li><a href="">Organic Garden</a></li>
+							</ul>
+						</div>
+						<div class="footer__links">
+							<button type="button" data-spoller data-spoller-close class="footer__links-title _icon-arrow-down">Legal</button>
+							<ul class="footer__links-body">
+								<li><a href="">T&C</a></li>
+								<li><a href="">Privacy Policy</a></li>
+								<li><a href="">Returns</a></li>
+								<li><a href="">Shipping</a></li>
+								<li><a href="">Cancellation</a></li>
+							</ul>
+						</div>
+						<div class="footer__links">
+							<button type="button" data-spoller data-spoller-close class="footer__links-title _icon-arrow-down">Support</button>
+							<ul class="footer__links-body">
+								<li><a href="">FAQs</a></li>
+								<li><a href="">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__badge"><img src="img/footer/badge.svg" alt=""></div>
+					<div class="footer__social">
+						<div class="footer__social-text">
+							<p>© 2021 Plan A Plant</p>
+							<p>All Rights Reserved</p>
+						</div>
+						<div class="footer__social-links">
+							<a href="" class="_icon-facebook"></a>
+							<a href="" class="_icon-twitter"></a>
+							<a href="" class="_icon-instagram"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__container-bottom">
+					<div class="footer__bottom-text">
+						<p>We facilitate your payments through trusted gateways</p>
+					</div>
+					<div class="footer__bottom-logos">
+						<img src="img/footer/payment-logos/visa.svg" alt="">
+						<img src="img/footer/payment-logos/mastercard.svg" alt="">
+						<img src="img/footer/payment-logos/amex.svg" alt="">
+						<img src="img/footer/payment-logos/rupay.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20231027132532"></script>
+</body>
+
+</html>

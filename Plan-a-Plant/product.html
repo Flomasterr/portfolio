@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>ProductPage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231027132532">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="120" data-scroll-show="1000" class="header">
+			<div class="header__top">
+				<div class="header__container-top">
+					<div class="header__top-text">
+						<p>Use code FIRST50 for a 50% discount on your first order!</p>
+					</div>
+					<a href="cart.html" class="header__top-cart _icon-cart"></a>
+					<a href="#" class="header__top-user _icon-user"></a>
+				</div>
+			</div>
+			<div class="header__main">
+				<div class="header__container-main">
+					<a href="" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.jpg" alt=""></picture></a>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list" data-spollers="991.98" data-one-spoller>
+								<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+								<li class="menu__item">
+									<button type="button" data-spoller data-spoller-close class="menu__item-opener _icon-arrow-down">Plants</button>
+									<ul class="menu__list-sub-menu sub-menu">
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 1</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 2</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 3</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 4</a></li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<button type="button" data-spoller data-spoller-close class="menu__item-opener _icon-arrow-down">Planters</button>
+									<ul class="menu__list-sub-menu sub-menu">
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 1</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 2</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 3</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 4</a></li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<button type="button" data-spoller data-spoller-close class="menu__item-opener _icon-arrow-down">Essentials</button>
+									<ul class="menu__list-sub-menu sub-menu">
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 1</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 2</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 3</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 4</a></li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<button type="button" data-spoller data-spoller-close class="menu__item-opener _icon-arrow-down">Services</button>
+									<ul class="menu__list-sub-menu sub-menu">
+										<li class="sub-menu__item"><a href="shop.html" class="sub-menu__link">Shop</a></li>
+										<li class="sub-menu__item"><a href="product.html" class="sub-menu__link">Product</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 3</a></li>
+										<li class="sub-menu__item"><a href="" class="sub-menu__link">item 4</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__main-search" data-da=".menu__list, 991.98">
+						<input autocomplete="off" type="search" name="form[]" data-error="Error" placeholder="Search" class="input _icon-search">
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="product-order">
+				<div class="product-order__container">
+					<div class="product-order__info info-product">
+						<h2 class="info-product__title">Hoya Linearis</h2>
+						<div class="info-product__price">$ 350<span>$ 450</span></div>
+						<div class="info-product__description">
+							<p>With rounded light green and white-striped leaves, the Calathea Orbifolia is a decorative and unique houseplant.</p>
+						</div>
+						<form class="info-product__quantity-form" action="">
+							<div class="info-product__quantity-wrapper">
+								<label for="q-1">Quantity</label>
+								<div data-quantity class="quantity">
+									<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+									<div class="quantity__input">
+										<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1" id="q-1">
+									</div>
+									<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+								</div>
+							</div>
+							<div class="info-product__select-wrapper">
+								<label for="s-1">Include Planter</label>
+								<select name="form[]" data-class-modif="form" class="info-product__select" id="s-1">
+									<option value="1" selected>Yes</option>
+									<option value="2">No</option>
+								</select>
+							</div>
+						</form>
+						<button type="button" class="info-product__button button">Add to Cart</button>
+						<div class="info-product__delivery">
+							<h4 class="info-product__delivery-title">Delivery</h4>
+							<div class="info-product__delivery-sub-title">
+								<p>Enter your Pincode to check delivery time.</p>
+							</div>
+							<form class="info-product__delivery-pincode-form" action="">
+								<input autocomplete="off" type="number" name="form[]" data-error="Error" placeholder="" class="input" value="500009">
+								<button type="submit" class="">CHECK</button>
+							</form>
+							<div class="info-product__delivery-check-result">
+								<p>Delivery available for this loaction.</p>
+								<p>Typically delivered in 5-7 working days.</p>
+								<p>Standard Delivery.</p>
+							</div>
+						</div>
+					</div>
+					<div class="product-order__gallery gallery" data-gallery>
+						<a href="img/product/product-order/item 1/1-full.jpg" class="gallery__item"><img src="img/product/product-order/item 1/1-thumb.jpg" alt=""></a>
+						<a href="img/product/product-order/item 1/2-thumb.jpg" class="gallery__item"><img src="img/product/product-order/item 1/2-thumb.jpg" alt=""></a>
+						<a href="img/product/product-order/item 1/3-thumb.jpg" class="gallery__item"><img src="img/product/product-order/item 1/3-thumb.jpg" alt=""></a>
+						<a href="img/product/product-order/item 1/4-thumb.jpg" class="gallery__item"><img src="img/product/product-order/item 1/4-thumb.jpg" alt=""></a>
+					</div>
+				</div>
+			</section>
+			<section class="product-details">
+				<div class="product-details__container">
+					<div data-tabs="768" data-tabs-animate class="product-details__tabs tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title _tab-active _icon-arrow-down">Care Guide</button>
+							<button type="button" class="tabs__title _icon-arrow-down">Plant Bio</button>
+							<button type="button" class="tabs__title _icon-arrow-down">Reviews</button>
+							<div id="marker"></div>
+						</nav>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body">
+								<div class="tabs__body-paragraph">
+									<h4 class="tabs__body-paragraph-title">Weekly Watering</h4>
+									<div class="tabs__body-paragraph-text">
+										<p>Calatheas enjoy weekly waterings, allowing the top 2’ of soil to dry out partially. In winter, we recommend watering less frequently to prevent overwatering and root rot. This plant is not very drought tolerant, and extended periods of dryness will cause leaf edges to brown.</p>
+									</div>
+								</div>
+								<div class="tabs__body-paragraph">
+									<h4 class="tabs__body-paragraph-title">Light Requirements</h4>
+									<div class="tabs__body-paragraph-text">
+										<p>Calatheas thrive in medium, indirect sunlight but tolerate lower light levels too. Bright direct sunlight can cause the stunning colours on their leaves to fade, with prolonged exposure likely to burn and scorch their leaves.</p>
+									</div>
+								</div>
+								<div class="tabs__body-paragraph">
+									<h4 class="tabs__body-paragraph-title">Humidity</h4>
+									<div class="tabs__body-paragraph-text">
+										<p>Your Calathea will also appreciate being placed in a humid environment, which you can create with by misting it frequently, placing it close to other plants or on a pebble tray partly filled with water. Calatheas thrive in steamy bathrooms and kitchens.</p>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__body-paragraph">
+									<h4 class="tabs__body-paragraph-title">2</h4>
+									<div class="tabs__body-paragraph-text">
+										<p>Calatheas enjoy weekly waterings, allowing the top 2’ of soil to dry out partially. In winter, we recommend watering less frequently to prevent overwatering and root rot. This plant is not very drought tolerant, and extended periods of dryness will cause leaf edges to brown.</p>
+									</div>
+								</div>
+								<div class="tabs__body-paragraph">
+									<h4 class="tabs__body-paragraph-title">2</h4>
+									<div class="tabs__body-paragraph-text">
+										<p>Calatheas thrive in medium, indirect sunlight but tolerate lower light levels too. Bright direct sunlight can cause the stunning colours on their leaves to fade, with prolonged exposure likely to burn and scorch their leaves.</p>
+									</div>
+								</div>
+								<div class="tabs__body-paragraph">
+									<h4 class="tabs__body-paragraph-title">2</h4>
+									<div class="tabs__body-paragraph-text">
+										<p>Your Calathea will also appreciate being placed in a humid environment, which you can create with by misting it frequently, placing it close to other plants or on a pebble tray partly filled with water. Calatheas thrive in steamy bathrooms and kitchens.</p>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__body-paragraph">
+									<h4 class="tabs__body-paragraph-title">3</h4>
+									<div class="tabs__body-paragraph-text">
+										<p>Calatheas enjoy weekly waterings, allowing the top 2’ of soil to dry out partially. In winter, we recommend watering less frequently to prevent overwatering and root rot. This plant is not very drought tolerant, and extended periods of dryness will cause leaf edges to brown.</p>
+									</div>
+								</div>
+								<div class="tabs__body-paragraph">
+									<h4 class="tabs__body-paragraph-title">3</h4>
+									<div class="tabs__body-paragraph-text">
+										<p>Calatheas thrive in medium, indirect sunlight but tolerate lower light levels too. Bright direct sunlight can cause the stunning colours on their leaves to fade, with prolonged exposure likely to burn and scorch their leaves.</p>
+									</div>
+								</div>
+								<div class="tabs__body-paragraph">
+									<h4 class="tabs__body-paragraph-title">3</h4>
+									<div class="tabs__body-paragraph-text">
+										<p>Your Calathea will also appreciate being placed in a humid environment, which you can create with by misting it frequently, placing it close to other plants or on a pebble tray partly filled with water. Calatheas thrive in steamy bathrooms and kitchens.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="you-may">
+				<div class="you-may__container">
+					<h2 class="you-may__title title">You May Also Like...</h2>
+					<div class="you-may__cards cards">
+						<div class="cards__card">
+							<div class="cards__card-image">
+								<picture><source srcset="img/product/you-may/1.webp" type="image/webp"><img src="img/product/you-may/1.jpg" class="" alt="" img></picture>
+								<div class="cards__card-image-discount">
+									<p>25%</p>
+									<p>off</p>
+								</div>
+							</div>
+							<div class="cards__info">
+								<div class="cards__info-plant-name">Adenium Plant</div>
+								<div class="cards__info-plant-price">$ 350<span class="cards__info-plant-price-crossed-out">$ 450</span></div>
+							</div>
+							<a href="" class="cards__card-link">Buy</a>
+						</div>
+						<div class="cards__card">
+							<div class="cards__card-image">
+								<picture><source srcset="img/product/you-may/2.webp" type="image/webp"><img src="img/product/you-may/2.jpg" class="" alt="" img></picture>
+								<div class="cards__card-image-discount">
+									<p>25%</p>
+									<p>off</p>
+								</div>
+							</div>
+							<div class="cards__info">
+								<div class="cards__info-plant-name">Ficus Twilight</div>
+								<div class="cards__info-plant-price">$ 350<span class="cards__info-plant-price-crossed-out">$ 450</span></div>
+							</div>
+							<a href="" class="cards__card-link">Buy</a>
+						</div>
+						<div class="cards__card">
+							<div class="cards__card-image">
+								<picture><source srcset="img/product/you-may/3.webp" type="image/webp"><img src="img/product/you-may/3.jpg" class="" alt="" img></picture>
+								<div class="cards__card-image-discount">
+									<p>25%</p>
+									<p>off</p>
+								</div>
+							</div>
+							<div class="cards__info">
+								<div class="cards__info-plant-name">Rhoeo Plant</div>
+								<div class="cards__info-plant-price">$ 350<span class="cards__info-plant-price-crossed-out">$ 450</span></div>
+							</div>
+							<a href="" class="cards__card-link">Buy</a>
+						</div>
+						<div class="cards__card">
+							<div class="cards__card-image">
+								<picture><source srcset="img/product/you-may/4.webp" type="image/webp"><img src="img/product/you-may/4.jpg" class="" alt="" img></picture>
+								<div class="cards__card-image-discount">
+									<p>25%</p>
+									<p>off</p>
+								</div>
+							</div>
+							<div class="cards__info">
+								<div class="cards__info-plant-name">Ctenanthe burle</div>
+								<div class="cards__info-plant-price">$ 350<span class="cards__info-plant-price-crossed-out">$ 450</span></div>
+							</div>
+							<a href="" class="cards__card-link">Buy</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__main">
+				<div class="footer__container-main">
+					<div class="footer__logo"><img src="img/footer/footer-logo.svg" alt=""></div>
+					<div class="footer__spollers" data-spollers="991.98" data-one-spoller>
+						<div class="footer__links">
+							<button type="button" data-spoller data-spoller-close class="footer__links-title _icon-arrow-down">Quick Links</button>
+							<ul class="footer__links-body">
+								<li><a href="">About Us</a></li>
+								<li><a href="">Bulk Order</a></li>
+								<li><a href="">Gifts</a></li>
+								<li><a href="">Organic Garden</a></li>
+							</ul>
+						</div>
+						<div class="footer__links">
+							<button type="button" data-spoller data-spoller-close class="footer__links-title _icon-arrow-down">Legal</button>
+							<ul class="footer__links-body">
+								<li><a href="">T&C</a></li>
+								<li><a href="">Privacy Policy</a></li>
+								<li><a href="">Returns</a></li>
+								<li><a href="">Shipping</a></li>
+								<li><a href="">Cancellation</a></li>
+							</ul>
+						</div>
+						<div class="footer__links">
+							<button type="button" data-spoller data-spoller-close class="footer__links-title _icon-arrow-down">Support</button>
+							<ul class="footer__links-body">
+								<li><a href="">FAQs</a></li>
+								<li><a href="">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__badge"><img src="img/footer/badge.svg" alt=""></div>
+					<div class="footer__social">
+						<div class="footer__social-text">
+							<p>© 2021 Plan A Plant</p>
+							<p>All Rights Reserved</p>
+						</div>
+						<div class="footer__social-links">
+							<a href="" class="_icon-facebook"></a>
+							<a href="" class="_icon-twitter"></a>
+							<a href="" class="_icon-instagram"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__container-bottom">
+					<div class="footer__bottom-text">
+						<p>We facilitate your payments through trusted gateways</p>
+					</div>
+					<div class="footer__bottom-logos">
+						<img src="img/footer/payment-logos/visa.svg" alt="">
+						<img src="img/footer/payment-logos/mastercard.svg" alt="">
+						<img src="img/footer/payment-logos/amex.svg" alt="">
+						<img src="img/footer/payment-logos/rupay.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20231027132532"></script>
+</body>
+
+</html>
