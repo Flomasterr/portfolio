@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Product Page</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240218141516">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper product-page">
+		<header data-scroll="100" data-scroll-show class="header">
+			<div class="header__notification notification-bar">
+				<div class="notification-bar__content">
+					<div class="notification-bar__text _icon-ticket-percent">
+						<p>30% off storewide — Limited time!</p>
+					</div>
+					<a href="#" class="notification-bar__link _icon-arrow-right-solid">Shop Now</a>
+				</div>
+				<button type="button" class="notification-bar__close-button _icon-close"></button>
+			</div>
+			<div class="header__container">
+				<a href="index.html" class="header__logo">3legant.</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="shop-page.html" class="menu__link">Shop</a></li>
+							<li class="menu__item"><a href="product-page.html" class="menu__link">Product</a></li>
+							<li class="menu__item"><a href="contact-us.html" class="menu__link">Contact Us</a></li>
+						</ul>
+						<div class="menu__bottom bottom-menu">
+							<ul class="bottom-menu__list">
+								<li class="bottom-menu__list-item">
+									<a href="#" class="_icon-shopping-bag">Cart</a>
+								</li>
+								<li class="bottom-menu__list-item">
+									<a href="#" class="_icon-heart">Wishlist</a>
+								</li>
+							</ul>
+							<a href="#" class="bottom-menu__button button">Sign In</a>
+							<ul class="bottom-menu__social">
+								<li class="bottom-menu__social-list-item"><a href="#" class="_icon-instagram"></a></li>
+								<li class="bottom-menu__social-list-item"><a href="#" class="_icon-facebook"></a></li>
+								<li class="bottom-menu__social-list-item"><a href="#" class="_icon-youtube"></a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<ul class="header__icons icons-header">
+					<li data-da=".menu__list, 767.98" id="header-search-container" class="icons-header__item">
+						<button id="header-search-button" class="_icon-search"></button>
+						<input autocomplete="off" type="search" name="form[]" data-error="Error" placeholder="Search" id="header-search" class="input">
+					</li>
+					<li class="icons-header__item"><a href="sign-up.html" class="_icon-user-circle"></a></li>
+					<li class="icons-header__item">
+						<button class="_icon-shopping-bag"></button>
+						<div class="flyout-cart">
+							<div class="flyout-cart__background"></div>
+							<div class="flyout-cart__body">
+								<header class="flyout-cart__header">
+									<h3 class="flyout-cart__header-title title title--28">Cart</h3>
+									<button class="flyout-cart__header-close-button _icon-close"></button>
+								</header>
+								<main class="flyout-cart__main">
+									<div class="cart-product">
+										<div class="cart-product__content">
+											<a href="#" class="cart-product__image">
+												<picture><source srcset="img/cart/cart1.webp" type="image/webp"><img src="img/cart/cart1.jpg" alt="image"></picture>
+											</a>
+											<ul class="cart-product__list">
+												<li class="cart-product__list-item">
+													<a href="#" class="cart-product__name text text--14 text--semi-bold">Tray Table</a>
+												</li>
+												<li class="cart-product__list-item">
+													<span class="cart-product__color text text--12">Color: Black</span>
+												</li>
+												<li class="cart-product__list-item">
+													<div data-quantity class="cart-product__quantity quantity">
+														<button data-quantity-minus type="button" class="quantity__button quantity__button--minus"></button>
+														<div class="quantity__input">
+															<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+														</div>
+														<button data-quantity-plus type="button" class="quantity__button quantity__button--plus"></button>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="cart-product__price text text--18">
+											<span>$19.00</span>
+											<button class="cart-product__remove-button _icon-close">Remove</button>
+										</div>
+									</div>
+									<div class="cart-product">
+										<div class="cart-product__content">
+											<a href="#" class="cart-product__image">
+												<picture><source srcset="img/cart/cart2.webp" type="image/webp"><img src="img/cart/cart2.jpg" alt="image"></picture>
+											</a>
+											<ul class="cart-product__list">
+												<li class="cart-product__list-item">
+													<a href="#" class="cart-product__name text text--14 text--semi-bold">Tray Table</a>
+												</li>
+												<li class="cart-product__list-item">
+													<span class="cart-product__color text text--12">Color: Red</span>
+												</li>
+												<li class="cart-product__list-item">
+													<div data-quantity class="cart-product__quantity quantity">
+														<button data-quantity-minus type="button" class="quantity__button quantity__button--minus"></button>
+														<div class="quantity__input">
+															<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+														</div>
+														<button data-quantity-plus type="button" class="quantity__button quantity__button--plus"></button>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="cart-product__price text text--18">
+											<span>$19.00</span>
+											<button class="cart-product__remove-button _icon-close">Remove</button>
+										</div>
+									</div>
+									<div class="cart-product">
+										<div class="cart-product__content">
+											<a href="#" class="cart-product__image">
+												<picture><source srcset="img/cart/cart3.webp" type="image/webp"><img src="img/cart/cart3.jpg" alt="image"></picture>
+											</a>
+											<ul class="cart-product__list">
+												<li class="cart-product__list-item">
+													<a href="#" class="cart-product__name text text--14 text--semi-bold">Table lamp</a>
+												</li>
+												<li class="cart-product__list-item">
+													<span class="cart-product__color text text--12">Color: gold</span>
+												</li>
+												<li class="cart-product__list-item">
+													<div data-quantity class="cart-product__quantity quantity">
+														<button data-quantity-minus type="button" class="quantity__button quantity__button--minus"></button>
+														<div class="quantity__input">
+															<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+														</div>
+														<button data-quantity-plus type="button" class="quantity__button quantity__button--plus"></button>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="cart-product__price text text--18">
+											<span>$39.00</span>
+											<button class="cart-product__remove-button _icon-close">Remove</button>
+										</div>
+									</div>
+								</main>
+								<footer class="flyout-cart__footer">
+									<div class="flyout-cart__footer-subtotal">
+										<span class="flyout-cart__footer-subtotal-text text">Subtotal</span>
+										<span class="flyout-cart__footer-subtotal-value text text--semi-bold">$99.00</span>
+									</div>
+									<div class="flyout-cart__footer-total">
+										<span class="flyout-cart__footer-total-text title title--20">Total</span>
+										<span class="flyout-cart__footer-total-value title title--20">$234.00</span>
+									</div>
+									<a href="check-out.html" class="flyout-cart__footer-checkout button">Checkout</a>
+									<a href="cart.html" class="flyout-cart__footer-viewcart text text--14 text--semi-bold">View Cart</a>
+								</footer>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main class="page">
+			<section class="product-loop">
+				<div class="product-loop__container">
+					<div class="product-loop__breadcrumbs breadcrumbs">
+						<a href="index.html" class="breadcrumbs__item _icon-chevron-right-solid">Home</a>
+						<a href="shop-page.html" class="breadcrumbs__item _icon-chevron-right-solid">Shop</a>
+						<a href="shop-page.html" class="breadcrumbs__item _icon-chevron-right-solid">Living Room</a>
+						<a href="product-page.html" class="breadcrumbs__item breadcrumbs--active-page">Product</a>
+					</div>
+					<div class="product-loop__content">
+						<div class="product-loop__sliders-block">
+							<div class="product-loop__slider swiper">
+								<!-- Slider moving part -->
+								<div class="product-loop__wrapper swiper-wrapper">
+									<!-- Slide -->
+									<div class="product-loop__slide swiper-slide">
+										<picture><source srcset="img/product/slider/product-slider1.webp" type="image/webp"><img class="product-loop__slide-image" src="img/product/slider/product-slider1.jpg" alt="image"></picture>
+									</div>
+									<div class="product-loop__slide swiper-slide">
+										<picture><source srcset="img/product/slider/product-slider2.webp" type="image/webp"><img class="product-loop__slide-image" src="img/product/slider/product-slider2.jpg" alt="image"></picture>
+									</div>
+									<div class="product-loop__slide swiper-slide">
+										<picture><source srcset="img/product/slider/product-slider3.webp" type="image/webp"><img class="product-loop__slide-image" src="img/product/slider/product-slider3.jpg" alt="image"></picture>
+									</div>
+									<div class="product-loop__slide swiper-slide">
+										<picture><source srcset="img/product/slider/product-slider4.webp" type="image/webp"><img class="product-loop__slide-image" src="img/product/slider/product-slider4.jpg" alt="image"></picture>
+									</div>
+								</div>
+								<!-- If we need navigation buttons -->
+								<button type="button" class="swiper-button-prev product-loop__slider-button-prev _icon-arrow-right-solid"></button>
+								<button type="button" class="swiper-button-next product-loop__slider-button-next _icon-arrow-right-solid"></button>
+							</div>
+							<div class="product-loop__thumb-slider swiper">
+								<!-- Slider moving part -->
+								<div class="product-loop__wrapper swiper-wrapper">
+									<!-- Slide -->
+									<div class="product-loop__slide swiper-slide">
+										<picture><source srcset="img/product/slider/product-slider1.webp" type="image/webp"><img class="product-loop__slide-image" src="img/product/slider/product-slider1.jpg" alt="image"></picture>
+									</div>
+									<div class="product-loop__slide swiper-slide">
+										<picture><source srcset="img/product/slider/product-slider2.webp" type="image/webp"><img class="product-loop__slide-image" src="img/product/slider/product-slider2.jpg" alt="image"></picture>
+									</div>
+									<div class="product-loop__slide swiper-slide">
+										<picture><source srcset="img/product/slider/product-slider3.webp" type="image/webp"><img class="product-loop__slide-image" src="img/product/slider/product-slider3.jpg" alt="image"></picture>
+									</div>
+									<div class="product-loop__slide swiper-slide">
+										<picture><source srcset="img/product/slider/product-slider4.webp" type="image/webp"><img class="product-loop__slide-image" src="img/product/slider/product-slider4.jpg" alt="image"></picture>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product-loop__body product-body">
+							<div class="product-body__info">
+								<div class="product-body__rating-group">
+									<ul class="product-body__rating">
+										<li class="product-body__rating-item"></li>
+										<li class="product-body__rating-item"></li>
+										<li class="product-body__rating-item"></li>
+										<li class="product-body__rating-item"></li>
+										<li class="product-body__rating-item"></li>
+									</ul>
+									<a href="#" class="product-body__reviews">11 Reviews</a>
+								</div>
+								<h2 class="product-body__product-name title title--40">Tray Table</h2>
+								<div class="product-body__description text">Buy one or buy a few and make every space
+									where you sit more convenient. Light and easy to move around with removable tray
+									top, handy for serving snacks.</div>
+								<div class="product-body__price title title--28">
+									$199.00 <span class="product-body__price-old title--20">$400.00</span>
+								</div>
+							</div>
+							<div data-timer="2024,01,12" class="product-body__timer timer">
+								<div class="timer__title text">Offer expires in:</div>
+								<div class="timer__blocks">
+									<div class="timer__block">
+										<div data-days class="timer__nubmer"></div>
+										<div class="timer__text">Days</div>
+									</div>
+									<div class="timer__block">
+										<div data-hours class="timer__nubmer"></div>
+										<div class="timer__text">Hours</div>
+									</div>
+									<div class="timer__block">
+										<div data-minutes class="timer__nubmer"></div>
+										<div class="timer__text">Minutes</div>
+									</div>
+									<div class="timer__block">
+										<div data-seconds class="timer__nubmer"></div>
+										<div class="timer__text">Seconds</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-body__swatches swatches-product">
+								<div class="swatches-product__measurements">
+									<div class="swatches-product__measurements-title text text--semi-bold">Measurements
+									</div>
+									<div class="swatches-product__measurements-text text text--20">17 1/2x20 5/8 "</div>
+								</div>
+								<div class="swatches-product__color">
+									<div class="swatches-product__color-title text _icon-chevron-right-solid">Choose
+										Color</div>
+									<div class="swatches-product__selected-color text text--20">Black</div>
+									<ul class="swatches-product__color-list">
+										<li class="swatches-product__color-list-item swatches-product__color-list-item--selected">
+											<picture><source srcset="img/product/swatches/swatches1.webp" type="image/webp"><img src="img/product/swatches/swatches1.jpg" alt="image"></picture>
+										</li>
+										<li class="swatches-product__color-list-item"><picture><source srcset="img/product/swatches/swatches2.webp" type="image/webp"><img src="img/product/swatches/swatches2.jpg" alt="image"></picture></li>
+										<li class="swatches-product__color-list-item"><picture><source srcset="img/product/swatches/swatches3.webp" type="image/webp"><img src="img/product/swatches/swatches3.jpg" alt="image"></picture></li>
+										<li class="swatches-product__color-list-item"><picture><source srcset="img/product/swatches/swatches4.webp" type="image/webp"><img src="img/product/swatches/swatches4.jpg" alt="image"></picture></li>
+									</ul>
+								</div>
+							</div>
+							<div class="product-body__cart product-cart-block">
+								<div class="product-cart-block__top">
+									<div data-quantity class="product-cart-block__quantity quantity">
+										<button data-quantity-minus type="button" class="quantity__button quantity__button--minus"></button>
+										<div class="quantity__input">
+											<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<button data-quantity-plus type="button" class="quantity__button quantity__button--plus"></button>
+									</div>
+									<button data-wishlist-button class="product-cart-block__wishlist-button button button--outline">Wishlist</button>
+								</div>
+								<button data-cart-button class="product-cart-block__cart-button button">Add to
+									Cart</button>
+							</div>
+							<div class="product-body__meta meta-block-product">
+								<div class="meta-block-product__tag-column">
+									<div class="meta-block-product__tag-item">SKU</div>
+									<div class="meta-block-product__tag-item">CATEGORY</div>
+								</div>
+								<div class="meta-block-product__value-column">
+									<div class="meta-block-product__value-item">1117</div>
+									<div class="meta-block-product__value-item">Living Room, Bedroom</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="product-tabs">
+				<div class="product-tabs__container">
+					<div data-tabs="768" class="tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title ">Additional Info</button>
+							<button type="button" class="tabs__title">Questions</button>
+							<button type="button" class="tabs__title _tab-active">Reviews</button>
+						</nav>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae repellat voluptas,
+								tempora est unde, nulla blanditiis ratione nihil nobis obcaecati, sunt sint aut
+								consectetur impedit necessitatibus ex! Voluptatibus, iusto id.
+							</div>
+							<div class="tabs__body">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum quaerat quasi eum quod
+								iusto, tenetur deserunt adipisci in? Et exercitationem autem voluptas sapiente fugit
+								accusamus ea, soluta esse suscipit dolorem.
+							</div>
+							<div class="tabs__body reviews-tab">
+								<section class="reviews-tab__review review-section">
+									<h3 class="review-section__title title title--28">Customer Reviews</h3>
+									<div class="review-section__rating">
+										<div class="review-section__rating-top">
+											<div class="rating rating_set">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+													<div class="rating__items">
+														<input type="radio" class="rating__item" value="1" name="rating">
+														<input type="radio" class="rating__item" value="2" name="rating">
+														<input type="radio" class="rating__item" value="3" name="rating">
+														<input type="radio" class="rating__item" value="4" name="rating">
+														<input type="radio" class="rating__item" value="5" name="rating">
+													</div>
+												</div>
+												<div class="rating__value">3.6</div>
+											</div>
+											<span class="rating__reviews-number">11 Reviews</span>
+										</div>
+										<div class="review-section__product-name text text--semi-bold">Tray Table</div>
+									</div>
+									<form action="#" class="review-section__feedback-form form-feedback">
+										<textarea data-autoheight class="form-feedback__textarea" name="form-feedback[textarea]" placeholder="Share your thoughts"></textarea>
+										<button type="submit" class="form-feedback__submit-button button">Send
+											Review</button>
+									</form>
+								</section>
+								<section class="reviews-tab__comments comment-section">
+									<div class="comment-section__header">
+										<h4 class="comment-section__reviews-number title title--28">11 Reviews</h4>
+										<form action="#" class="comment-section__select-form">
+											<select name="form[select]" data-class-modif="form" class="comment-section__select">
+												<option value="1" selected>Newest</option>
+												<option value="2">Oldest</option>
+												<option value="3">Reviews number</option>
+												<option value="4">Relevant</option>
+											</select>
+										</form>
+									</div>
+									<div class="comment-section__comments">
+										<div class="comment-section__comment comment">
+											<div class="comment__header">
+												<div class="comment__avatar">
+													<picture><source srcset="img/product/comments/avatar1.webp" type="image/webp"><img src="img/product/comments/avatar1.jpg" alt="image"></picture>
+												</div>
+												<div class="comment__header-info">
+													<div class="comment__user-name text text--20 text--semi-bold">Sofia
+														Harvetz</div>
+													<div class="comment__rating">
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+													</div>
+												</div>
+											</div>
+											<div class="comment__text text">
+												<p>I bought it 3 weeks ago and now come back just to say “Awesome
+													Product”. I really enjoy it. At vero eos et accusamus et iusto odio
+													dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+													atque corrupt et quas molestias excepturi sint non provident.</p>
+											</div>
+											<div class="comment__reaction">
+												<button type="button" class="comment__like text text--12 text--semi-bold">Like</button>
+												<button type="button" class="comment__reply text text--12 text--semi-bold">Reply</button>
+											</div>
+										</div>
+										<div class="comment-section__comment comment">
+											<div class="comment__header">
+												<div class="comment__avatar">
+													<picture><source srcset="img/product/comments/avatar2.webp" type="image/webp"><img src="img/product/comments/avatar2.jpg" alt="image"></picture>
+												</div>
+												<div class="comment__header-info">
+													<div class="comment__user-name text text--20 text--semi-bold">Nicolas
+														Jensen</div>
+													<div class="comment__rating">
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+													</div>
+												</div>
+											</div>
+											<div class="comment__text text">
+												<p>I bought it 3 weeks ago and now come back just to say “Awesome
+													Product”. I really enjoy it. At vero eos et accusamus et iusto odio
+													dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+													atque corrupt et quas molestias excepturi sint non provident.</p>
+											</div>
+											<div class="comment__reaction">
+												<button type="button" class="comment__like text text--12 text--semi-bold">Like</button>
+												<button type="button" class="comment__reply text text--12 text--semi-bold">Reply</button>
+											</div>
+										</div>
+										<div class="comment-section__comment comment">
+											<div class="comment__header">
+												<div class="comment__avatar">
+													<picture><source srcset="img/product/comments/avatar3.webp" type="image/webp"><img src="img/product/comments/avatar3.jpg" alt="image"></picture>
+												</div>
+												<div class="comment__header-info">
+													<div class="comment__user-name text text--20 text--semi-bold">Nicolas
+														Jensen</div>
+													<div class="comment__rating">
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+													</div>
+												</div>
+											</div>
+											<div class="comment__text text">
+												<p>I bought it 3 weeks ago and now come back just to say “Awesome
+													Product”. I really enjoy it. At vero eos et accusamus et iusto odio
+													dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+													atque corrupt et quas molestias excepturi sint non provident.</p>
+											</div>
+											<div class="comment__reaction">
+												<button type="button" class="comment__like text text--12 text--semi-bold">Like</button>
+												<button type="button" class="comment__reply text text--12 text--semi-bold">Reply</button>
+											</div>
+										</div>
+										<div class="comment-section__comment comment">
+											<div class="comment__header">
+												<div class="comment__avatar">
+													<picture><source srcset="img/product/comments/avatar4.webp" type="image/webp"><img src="img/product/comments/avatar4.jpg" alt="image"></picture>
+												</div>
+												<div class="comment__header-info">
+													<div class="comment__user-name text text--20 text--semi-bold">Nicolas
+														Jensen</div>
+													<div class="comment__rating">
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+													</div>
+												</div>
+											</div>
+											<div class="comment__text text">
+												<p>I bought it 3 weeks ago and now come back just to say “Awesome
+													Product”. I really enjoy it. At vero eos et accusamus et iusto odio
+													dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+													atque corrupt et quas molestias excepturi sint non provident.</p>
+											</div>
+											<div class="comment__reaction">
+												<button type="button" class="comment__like text text--12 text--semi-bold">Like</button>
+												<button type="button" class="comment__reply text text--12 text--semi-bold">Reply</button>
+											</div>
+										</div>
+										<div class="comment-section__comment comment">
+											<div class="comment__header">
+												<div class="comment__avatar">
+													<picture><source srcset="img/product/comments/avatar5.webp" type="image/webp"><img src="img/product/comments/avatar5.jpg" alt="image"></picture>
+												</div>
+												<div class="comment__header-info">
+													<div class="comment__user-name text text--20 text--semi-bold">Nicolas
+														Jensen</div>
+													<div class="comment__rating">
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+														<span class="comment__rating-star"></span>
+													</div>
+												</div>
+											</div>
+											<div class="comment__text text">
+												<p>I bought it 3 weeks ago and now come back just to say “Awesome
+													Product”. I really enjoy it. At vero eos et accusamus et iusto odio
+													dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+													atque corrupt et quas molestias excepturi sint non provident.</p>
+											</div>
+											<div class="comment__reaction">
+												<button type="button" class="comment__like text text--12 text--semi-bold">Like</button>
+												<button type="button" class="comment__reply text text--12 text--semi-bold">Reply</button>
+											</div>
+										</div>
+										<button type="button" class="comment-section__load-more button button--outline">Load more</button>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="newsletter">
+				<div class="newsletter__content">
+					<div class="newsletter__header">
+						<h2 class="newsletter__title title title--40">Join Our Newsletter</h2>
+						<div class="newsletter__subtitle text text--18">
+							<p>Sign up for deals, new products and promotions</p>
+						</div>
+					</div>
+					<form action="#" class="newsletter__form form" method="POST">
+						<input type="email" required name="form[email]" data-error="Error" placeholder="Email address" class="input form__input newsletter__input">
+						<button type="submit" class="newsletter__button form__button">Signup</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__logo-block">
+						<a href="#" class="footer__logo">3legant.
+						</a>
+						<div class="footer__slogan">Gift & Decoration Store</div>
+					</div>
+					<ul class="footer__nav">
+						<li class="footer__nav-item"><a href="#">Home</a></li>
+						<li class="footer__nav-item"><a href="#">Shop</a></li>
+						<li class="footer__nav-item"><a href="#">Product</a></li>
+						<li class="footer__nav-item"><a href="#">Blog</a></li>
+						<li class="footer__nav-item"><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__bottom-info">
+						<div class="footer__copyright">
+							<p>Copyright © 2023 3legant. All rights reserved</p>
+						</div>
+						<div class="footer__terms">
+							<a href="#" class="footer__terms-link">Privacy Policy</a>
+							<a href="#" class="footer__terms-link">Terms of Use</a>
+						</div>
+					</div>
+					<ul class="footer__social">
+						<li class="footer__social-item"><a href="#" class="_icon-instagram"></a></li>
+						<li class="footer__social-item"><a href="#" class="_icon-facebook"></a></li>
+						<li class="footer__social-item"><a href="#" class="_icon-youtube"></a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240218141516"></script>
+</body>
+
+</html>
