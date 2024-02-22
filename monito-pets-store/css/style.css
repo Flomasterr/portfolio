@@ -1987,36 +1987,28 @@ h6 {
           align-items: center;
 }
 
-.pet-sellers .card-pets {
+.pet-sellers__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 151px;
-          flex: 0 0 151px;
-  height: 112px;
-  padding: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+      -ms-flex: 0 0 120px;
+          flex: 0 0 120px;
 }
 
-.no-webp .pet-sellers .card-pets:nth-child(1){
-  background: url("../img/home/pet-sellers/1.png") center no-repeat; }
-
-.no-webp .pet-sellers .card-pets:nth-child(2){
-  background: url("../img/home/pet-sellers/2.png") center no-repeat; }
-
-.no-webp .pet-sellers .card-pets:nth-child(3){
-  background: url("../img/home/pet-sellers/3.png") center no-repeat; }
-
-.no-webp .pet-sellers .card-pets:nth-child(4){
-  background: url("../img/home/pet-sellers/4.png") center no-repeat; }
-
-.no-webp .pet-sellers .card-pets:nth-child(5){
-  background: url("../img/home/pet-sellers/5.png") center no-repeat; }
-
-.no-webp .pet-sellers .card-pets:nth-child(6){
-  background: url("../img/home/pet-sellers/6.png") center no-repeat; }
-
-.no-webp .pet-sellers .card-pets:nth-child(7){
-  background: url("../img/home/pet-sellers/7.png") center no-repeat; }
+.pet-sellers__slide img {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transition: scale 0.3s ease 0s;
+  -o-transition: scale 0.3s ease 0s;
+  transition: scale 0.3s ease 0s;
+}
 
 .adoption {
   padding: 0 1rem;
@@ -2745,6 +2737,13 @@ h6 {
   }
 }
 
+@media (min-width: 75em) {
+  .pet-knowledge .header-pets__slider-nav {
+    display: none;
+    pointer-events: none;
+  }
+}
+
 @media (max-width: 1018px) {
   .icon-menu {
     display: block;
@@ -3260,6 +3259,10 @@ h6 {
     text-decoration: underline;
   }
 
+  .pet-sellers__slide img:hover {
+    scale: 1.1;
+  }
+
   .bread-crumbs li:hover {
     text-decoration: underline;
   }
@@ -3329,17 +3332,3 @@ h6 {
             flex: 1 1 auto;
   }
 }
-
-.webp .pet-sellers .card-pets:nth-child(1){ background: url(../img/home/pet-sellers/1.webp) center no-repeat; }
-
-.webp .pet-sellers .card-pets:nth-child(2){ background: url(../img/home/pet-sellers/2.webp) center no-repeat; }
-
-.webp .pet-sellers .card-pets:nth-child(3){ background: url(../img/home/pet-sellers/3.webp) center no-repeat; }
-
-.webp .pet-sellers .card-pets:nth-child(4){ background: url(../img/home/pet-sellers/4.webp) center no-repeat; }
-
-.webp .pet-sellers .card-pets:nth-child(5){ background: url(../img/home/pet-sellers/5.webp) center no-repeat; }
-
-.webp .pet-sellers .card-pets:nth-child(6){ background: url(../img/home/pet-sellers/6.webp) center no-repeat; }
-
-.webp .pet-sellers .card-pets:nth-child(7){ background: url(../img/home/pet-sellers/7.webp) center no-repeat; }
