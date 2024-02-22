@@ -11,3 +11,5 @@ https://flomasterr.github.io/portfolio/whitespace/index.html
 https://flomasterr.github.io/portfolio/AI-blog-website/index.html
 
 https://flomasterr.github.io/portfolio/clothing-store/index.html
+
+https://flomasterr.github.io/portfolio/Elegant(e-commerce design)/index.html
