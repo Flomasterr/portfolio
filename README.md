@@ -8,3 +8,4 @@ https://flomasterr.github.io/portfolio/UnwindCabins/index.html
 
 https://flomasterr.github.io/portfolio/whitespace/index.html
 
+https://flomasterr.github.io/portfolio/AI-blog-website/index.html
