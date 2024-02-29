@@ -1,0 +1,172 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "image": "img/home/product-carousel/product-carousel1.jpg",
+            "badges": {
+                "isNew": true,
+                "discount": true
+            },
+            "rating": 3.5,
+            "url": "#",
+            "price": 400.00,
+            "name": "Loveseat Sofa",
+            "date": "30.11.2023",
+            "category": "living-room"
+        },
+        {
+            "id": 2,
+            "image": "img/home/product-carousel/product-carousel2.jpg",
+            "badges": {
+                "isNew": true,
+                "discount": true
+            },
+            "rating": 4.5,
+            "url": "#",
+            "price": 39.99,
+            "name": "Table Lamp",
+            "date": "11.11.2023",
+            "category": "bedroom"
+        },
+        {
+            "id": 3,
+            "image": "img/home/product-carousel/product-carousel3.jpg",
+            "badges": {
+                "isNew": true,
+                "discount": true
+            },
+            "rating": 2.5,
+            "url": "#",
+            "price": 19.00,
+            "name": "Table Lamp",
+            "date": "12.11.2023",
+            "category": "dining"
+        },
+        {
+            "id": 4,
+            "image": "img/home/product-carousel/product-carousel4.jpg",
+            "badges": {
+                "isNew": false,
+                "discount": false
+            },
+            "rating": 3.2,
+            "url": "#",
+            "price": 9.99,
+            "name": "Bamboo Basket",
+            "date": "13.11.2023",
+            "category": "outdoor"
+        },
+        {
+            "id": 5,
+            "image": "img/home/product-carousel/product-carousel5.jpg",
+            "badges": {
+                "isNew": true,
+                "discount": true
+            },
+            "rating": 2.9,
+            "url": "#",
+            "price": 500.00,
+            "name": "Luxury Sofa",
+            "date": "29.11.2023",
+            "category": "living-room"
+        },
+        {
+            "id": 6,
+            "image": "img/home/product-carousel/product-carousel6.jpg",
+            "badges": {
+                "isNew": true,
+                "discount": true
+            },
+            "rating": 4.4,
+            "url": "#",
+            "price": 299.00,
+            "name": "Cozy Sofa",
+            "date": "15.11.2023",
+            "category": "living-room"
+        },
+        {
+            "id": 7,
+            "image": "img/home/product-carousel/product-carousel7.jpg",
+            "badges": {
+                "isNew": true,
+                "discount": false
+            },
+            "rating": 3.7,
+            "url": "#",
+            "price": 89.99,
+            "name": "White Drawer unit",
+            "date": "18.11.2023",
+            "category": "kitchen"
+        },
+        {
+            "id": 8,
+            "image": "img/home/product-carousel/product-carousel8.jpg",
+            "badges": {
+                "isNew": true,
+                "discount": false
+            },
+            "rating": 3.1,
+            "url": "#",
+            "price": 19.99,
+            "name": "Black Tray table",
+            "date": "07.11.2023",
+            "category": "outdoor"
+        },
+        {
+            "id": 9,
+            "image": "img/home/product-carousel/product-carousel9.jpg",
+            "badges": {
+                "isNew": true,
+                "discount": false
+            },
+            "rating": 4.6,
+            "url": "#",
+            "price": 39.00,
+            "name": "Lamp",
+            "date": "21.11.2023",
+            "category": "dining"
+        },
+        {
+            "id": 10,
+            "image": "img/home/product-carousel/product-carousel10.jpg",
+            "badges": {
+                "isNew": true,
+                "discount": false
+            },
+            "rating": 4.2,
+            "url": "#",
+            "price": 16.99,
+            "name": "Black Brow Side table",
+            "date": "20.11.2023",
+            "category": "outdoor"
+        },
+        {
+            "id": 11,
+            "image": "img/home/product-carousel/product-carousel11.jpg",
+            "badges": {
+                "isNew": true,
+                "discount": false
+            },
+            "rating": 4.1,
+            "url": "#",
+            "price": 3.99,
+            "name": "Light Beige Pillow",
+            "date": "24.11.2023",
+            "category": "bedroom"
+        },
+        {
+            "id": 12,
+            "image": "img/home/product-carousel/product-carousel12.jpg",
+            "badges": {
+                "isNew": true,
+                "discount": false
+            },
+            "rating": 4.7,
+            "url": "#",
+            "price": 7.99,
+            "name": "Off-white Pillow",
+            "date": "25.11.2023",
+            "category": "bedroom"
+        }
+    ]
+}

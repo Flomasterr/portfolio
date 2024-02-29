@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Sign In</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240218141516">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<section data-fullscreen class="sign-in">
+				<div class="sign-in__image-ibg">
+					<picture><source srcset="img/sign-up/sign-up.webp" type="image/webp"><img src="img/sign-up/sign-up.jpg" img></picture>
+					<a href="index.html" class="sign-in__logo">3legant.
+					</a>
+				</div>
+				<div class="sign-in__content">
+					<div class="sign-in__content-body">
+						<div class="sign-in__header">
+							<h2 class="sign-in__title title title--40">Sign In</h2>
+							<div class="sign-in__text text">
+								<p>Don’t have an accout yet? <a href="sign-up.html" class="text--semi-bold">Sign Up</a></p>
+							</div>
+						</div>
+						<form action="#" method="POST" class="sign-in__form form">
+							<input autocomplete="off" type="text" name="form[username]" data-error="Error" placeholder="Your username or email address" class="input form__input" required>
+							<div class="form__password-block">
+								<input autocomplete="off" type="password" name="form[password]" data-error="Error" placeholder="Password" class="input form__input" required>
+								<button type="button" class="form__viewpass"></button>
+							</div>
+							<div class="form__checkbox checkbox">
+								<input id="s_1" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[checkbox]" required>
+								<label for="s_1" class="checkbox__label"><span class="checkbox__text">Remember me <a href="#">Forgot password?</a></span></label>
+							</div>
+							<button type="submit" class="form__submit-button button">Sign In</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20240218141516"></script>
+</body>
+
+</html>
