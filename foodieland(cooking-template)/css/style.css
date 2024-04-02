@@ -786,8 +786,7 @@ h6 {
 .contact-us__container,
 .blog-post__header,
 .blog-list__header,
-.recipe-details__container,
-.hero .swiper-slide {
+.recipe-details__container {
   position: relative;
   opacity: 0;
   top: -3.125rem;
@@ -798,9 +797,7 @@ h6 {
 .loaded .contact-us__container,
 .loaded .blog-post__header,
 .loaded .blog-list__header,
-.loaded .recipe-details__container,
-.loaded .hero .swiper-slide,
-.hero .loaded .swiper-slide {
+.loaded .recipe-details__container {
   top: 0;
   opacity: 1;
 }
