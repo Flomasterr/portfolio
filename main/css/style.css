@@ -95,23 +95,6 @@ h6 {
   margin: 0 auto;
   padding: 0 .9375rem
 }
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem
-}
-.form__input {
-  border: .125rem solid #262626;
-  border-radius: .875rem;
-  background-color: #1b1b1b;
-  padding: .625rem .9375rem
-}
-.form__button {
-  background-color: #e63e21;
-  padding: .625rem .9375rem;
-  border-radius: .3125rem;
-  transition: color .3s ease 0s,background-color .3s ease 0s
-}
 .spollers {
   display: grid;
   width: 100%
@@ -300,46 +283,82 @@ h6 {
   font-weight: 600;
   line-height: 1.2222222222em
 }
+@-webkit-keyframes shake {
+  25% {
+    rotate: -45deg
+  }
+  50% {
+    rotate: 45deg
+  }
+  75% {
+    rotate: -20deg
+  }
+  100% {
+    rotate: 0
+  }
+}
+@keyframes shake {
+  25% {
+    rotate: -45deg
+  }
+  50% {
+    rotate: 45deg
+  }
+  75% {
+    rotate: -20deg
+  }
+  100% {
+    rotate: 0
+  }
+}
 section {
   background: linear-gradient(189.04deg,rgba(230,62,33,.2) 18.594%,rgba(51,19,14,0) 53.252%),#1b1b1b
 }
 [class*=__container] {
   min-height: 100%
 }
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center
-}
 .hero__container {
   display: flex;
-  place-items: center
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1.875rem
+}
+.hero .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  max-width: 37.5rem
 }
 .hero .card__info {
+  text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  max-width: 18.75rem;
   gap: 1.25rem
 }
 .hero .card__text {
   color: silver;
   line-height: 1.5em
 }
-.hero .card__image {
-  width: 50rem;
-  height: 25rem
-}
-.hero .card__image img {
-  aspect-ratio: 1280/853
-}
 .hero .card__links {
   display: flex;
-  gap: 1.25rem
+  gap: 1.25rem;
+  justify-content: center
 }
-.hero .card__link img {
-  width: 2.5rem;
-  height: 2.5rem
+.hero .card__contacts {
+  text-align: center
+}
+.hero .card__contacts-title {
+  line-height: 1.5;
+  color: silver;
+  line-height: 1.5em
+}
+.hero .card__contacts-title:not(:last-child) {
+  margin-bottom: 1.25rem
+}
+.hero .card [data-span] span {
+  display: inline-block
 }
 .portfolio__container {
   display: flex;
@@ -372,7 +391,8 @@ section {
   height: .5rem;
   border-radius: 50%;
   background-color: #e63e21;
-  transition: all .3s ease 0s
+  transition: all .3s ease 0s;
+  cursor: pointer
 }
 .portfolio .portfolio-pagination .swiper-pagination-bullet-active {
   width: 1rem;
@@ -396,6 +416,9 @@ section {
 .portfolio .portfolio-button-next {
   -webkit-transform: translate(0,-50%);
   transform: translate(0,-50%)
+}
+.portfolio .swiper-button-disabled {
+  cursor: not-allowed
 }
 .portfolio .swiper-button-disabled svg {
   opacity: .5
@@ -483,6 +506,104 @@ section {
 .technologies .spollers__body ul li {
   list-style: inside disc
 }
+.tippy-box[data-animation=fade][data-state=hidden] {
+  opacity: 0
+}
+[data-tippy-root] {
+  max-width: calc(100vw - 10px)
+}
+.tippy-box {
+  position: relative;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.4;
+  outline: 0;
+  transition-property: visibility,opacity,-webkit-transform;
+  transition-property: transform,visibility,opacity;
+  transition-property: transform,visibility,opacity,-webkit-transform
+}
+.tippy-box[data-placement^=top] > .tippy-arrow {
+  bottom: 0
+}
+.tippy-box[data-placement^=top] > .tippy-arrow:before {
+  bottom: -7px;
+  left: 0;
+  border-width: 8px 8px 0;
+  border-top-color: initial;
+  -webkit-transform-origin: center top;
+  transform-origin: center top
+}
+.tippy-box[data-placement^=bottom] > .tippy-arrow {
+  top: 0
+}
+.tippy-box[data-placement^=bottom] > .tippy-arrow:before {
+  top: -7px;
+  left: 0;
+  border-width: 0 8px 8px;
+  border-bottom-color: initial;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom
+}
+.tippy-box[data-placement^=left] > .tippy-arrow {
+  right: 0
+}
+.tippy-box[data-placement^=left] > .tippy-arrow:before {
+  border-width: 8px 0 8px 8px;
+  border-left-color: initial;
+  right: -7px;
+  -webkit-transform-origin: center left;
+  transform-origin: center left
+}
+.tippy-box[data-placement^=right] > .tippy-arrow {
+  left: 0
+}
+.tippy-box[data-placement^=right] > .tippy-arrow:before {
+  left: -7px;
+  border-width: 8px 8px 8px 0;
+  border-right-color: initial;
+  -webkit-transform-origin: center right;
+  transform-origin: center right
+}
+.tippy-box[data-inertia][data-state=visible] {
+  transition-timing-function: cubic-bezier(.54,1.5,.38,1.11)
+}
+.tippy-arrow {
+  width: 16px;
+  height: 16px;
+  color: #333
+}
+.tippy-arrow:before {
+  content: "";
+  position: absolute;
+  border-color: transparent;
+  border-style: solid
+}
+.tippy-content {
+  position: relative;
+  padding: 5px 9px;
+  z-index: 1
+}
+.tippy-box[data-animation=shift-toward][data-state=hidden] {
+  opacity: 0
+}
+.tippy-box[data-animation=shift-toward][data-state=hidden][data-placement^=top] {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px)
+}
+.tippy-box[data-animation=shift-toward][data-state=hidden][data-placement^=bottom] {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px)
+}
+.tippy-box[data-animation=shift-toward][data-state=hidden][data-placement^=left] {
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px)
+}
+.tippy-box[data-animation=shift-toward][data-state=hidden][data-placement^=right] {
+  -webkit-transform: translateX(10px);
+  transform: translateX(10px)
+}
 .swiper {
   overflow: hidden
 }
@@ -532,7 +653,28 @@ section {
   [class*=__container] {
     padding-top: 5.625rem
   }
+  .hero .card {
+    padding-top: 2.5rem
+  }
+  .hero .card {
+    padding-bottom: 2.5rem
+  }
+  .hero .card {
+    padding-left: 2.625rem
+  }
+  .hero .card {
+    padding-right: 2.625rem
+  }
   .hero .card__text {
+    font-size: 1.25rem
+  }
+  .hero .card__link img {
+    width: 2.5rem
+  }
+  .hero .card__link img {
+    height: 2.5rem
+  }
+  .hero .card__contacts-title {
     font-size: 1.25rem
   }
   .portfolio__slider {
@@ -568,12 +710,33 @@ section {
     flex-basis: 1.5rem
   }
   .title {
-    font-size: 1.5rem
+    font-size: 1.625rem
   }
   [class*=__container] {
     padding-top: 3.75rem
   }
+  .hero .card {
+    padding-top: 1.5625rem
+  }
+  .hero .card {
+    padding-bottom: 1.5625rem
+  }
+  .hero .card {
+    padding-left: 2.1875rem
+  }
+  .hero .card {
+    padding-right: 2.1875rem
+  }
   .hero .card__text {
+    font-size: 1rem
+  }
+  .hero .card__link img {
+    width: 1.875rem
+  }
+  .hero .card__link img {
+    height: 1.875rem
+  }
+  .hero .card__contacts-title {
     font-size: 1rem
   }
   .portfolio__slider {
@@ -666,14 +829,14 @@ section {
       flex-basis: calc(1.5rem + 1 * (100vw - 20rem)/ 67.5)
     }
   }
-  @supports (font-size:clamp(1.5rem ,1.2777777778rem + 1.1111111111vw ,2.25rem)) {
+  @supports (font-size:clamp(1.625rem ,1.4398148148rem + 0.9259259259vw ,2.25rem)) {
     .title {
-      font-size: clamp(1.5rem ,1.2777777778rem + 1.1111111111vw ,2.25rem)
+      font-size: clamp(1.625rem ,1.4398148148rem + .9259259259vw ,2.25rem)
     }
   }
-  @supports not (font-size:clamp(1.5rem ,1.2777777778rem + 1.1111111111vw ,2.25rem)) {
+  @supports not (font-size:clamp(1.625rem ,1.4398148148rem + 0.9259259259vw ,2.25rem)) {
     .title {
-      font-size: calc(1.5rem + .75 * (100vw - 20rem)/ 67.5)
+      font-size: calc(1.625rem + .625 * (100vw - 20rem)/ 67.5)
     }
   }
   @supports (padding-top:clamp(3.75rem ,3.1944444444rem + 2.7777777778vw ,5.625rem)) {
@@ -686,6 +849,46 @@ section {
       padding-top: calc(3.75rem + 1.875 * (100vw - 20rem)/ 67.5)
     }
   }
+  @supports (padding-top:clamp(1.5625rem ,1.2847222222rem + 1.3888888889vw ,2.5rem)) {
+    .hero .card {
+      padding-top: clamp(1.5625rem ,1.2847222222rem + 1.3888888889vw ,2.5rem)
+    }
+  }
+  @supports not (padding-top:clamp(1.5625rem ,1.2847222222rem + 1.3888888889vw ,2.5rem)) {
+    .hero .card {
+      padding-top: calc(1.5625rem + .9375 * (100vw - 20rem)/ 67.5)
+    }
+  }
+  @supports (padding-bottom:clamp(1.5625rem ,1.2847222222rem + 1.3888888889vw ,2.5rem)) {
+    .hero .card {
+      padding-bottom: clamp(1.5625rem ,1.2847222222rem + 1.3888888889vw ,2.5rem)
+    }
+  }
+  @supports not (padding-bottom:clamp(1.5625rem ,1.2847222222rem + 1.3888888889vw ,2.5rem)) {
+    .hero .card {
+      padding-bottom: calc(1.5625rem + .9375 * (100vw - 20rem)/ 67.5)
+    }
+  }
+  @supports (padding-left:clamp(2.1875rem ,2.0578703704rem + 0.6481481481vw ,2.625rem)) {
+    .hero .card {
+      padding-left: clamp(2.1875rem ,2.0578703704rem + .6481481481vw ,2.625rem)
+    }
+  }
+  @supports not (padding-left:clamp(2.1875rem ,2.0578703704rem + 0.6481481481vw ,2.625rem)) {
+    .hero .card {
+      padding-left: calc(2.1875rem + .4375 * (100vw - 20rem)/ 67.5)
+    }
+  }
+  @supports (padding-right:clamp(2.1875rem ,2.0578703704rem + 0.6481481481vw ,2.625rem)) {
+    .hero .card {
+      padding-right: clamp(2.1875rem ,2.0578703704rem + .6481481481vw ,2.625rem)
+    }
+  }
+  @supports not (padding-right:clamp(2.1875rem ,2.0578703704rem + 0.6481481481vw ,2.625rem)) {
+    .hero .card {
+      padding-right: calc(2.1875rem + .4375 * (100vw - 20rem)/ 67.5)
+    }
+  }
   @supports (font-size:clamp(1rem ,0.9259259259rem + 0.3703703704vw ,1.25rem)) {
     .hero .card__text {
       font-size: clamp(1rem ,.9259259259rem + .3703703704vw ,1.25rem)
@@ -693,6 +896,36 @@ section {
   }
   @supports not (font-size:clamp(1rem ,0.9259259259rem + 0.3703703704vw ,1.25rem)) {
     .hero .card__text {
+      font-size: calc(1rem + .25 * (100vw - 20rem)/ 67.5)
+    }
+  }
+  @supports (width:clamp(1.875rem ,1.6898148148rem + 0.9259259259vw ,2.5rem)) {
+    .hero .card__link img {
+      width: clamp(1.875rem ,1.6898148148rem + .9259259259vw ,2.5rem)
+    }
+  }
+  @supports not (width:clamp(1.875rem ,1.6898148148rem + 0.9259259259vw ,2.5rem)) {
+    .hero .card__link img {
+      width: calc(1.875rem + .625 * (100vw - 20rem)/ 67.5)
+    }
+  }
+  @supports (height:clamp(1.875rem ,1.6898148148rem + 0.9259259259vw ,2.5rem)) {
+    .hero .card__link img {
+      height: clamp(1.875rem ,1.6898148148rem + .9259259259vw ,2.5rem)
+    }
+  }
+  @supports not (height:clamp(1.875rem ,1.6898148148rem + 0.9259259259vw ,2.5rem)) {
+    .hero .card__link img {
+      height: calc(1.875rem + .625 * (100vw - 20rem)/ 67.5)
+    }
+  }
+  @supports (font-size:clamp(1rem ,0.9259259259rem + 0.3703703704vw ,1.25rem)) {
+    .hero .card__contacts-title {
+      font-size: clamp(1rem ,.9259259259rem + .3703703704vw ,1.25rem)
+    }
+  }
+  @supports not (font-size:clamp(1rem ,0.9259259259rem + 0.3703703704vw ,1.25rem)) {
+    .hero .card__contacts-title {
       font-size: calc(1rem + .25 * (100vw - 20rem)/ 67.5)
     }
   }
@@ -760,12 +993,26 @@ section {
   }
 }
 @media (any-hover:hover) {
-  .form__button:hover {
-    background-color: #fff;
-    color: #e63e21
+  .spollers__item:hover .spollers__title:not(._spoller-active) {
+    border-color: silver
+  }
+  .spollers__item:hover ._spoller-active,
+  .spollers__item:hover ._spoller-active + .spollers__body {
+    border-color: silver
   }
   .fp-bullets .fp-bullet:hover {
     opacity: 1
+  }
+  .hero .card__link:hover {
+    -webkit-animation: shake 1s forwards linear;
+    animation: shake 1s forwards linear
+  }
+  .portfolio .portfolio-pagination .swiper-pagination-bullet:hover {
+    background-color: #fff
+  }
+  .portfolio .portfolio-button-next:hover:not(.swiper-button-disabled) svg,
+  .portfolio .portfolio-button-prev:hover:not(.swiper-button-disabled) svg {
+    fill: #fff
   }
   .portfolio-slide__page:hover {
     background-color: #fff;
