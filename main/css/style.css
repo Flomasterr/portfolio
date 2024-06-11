@@ -788,6 +788,16 @@ section {
     justify-content: center
   }
 }
+@media (max-width:31.5625em) {
+  .hero .card__title {
+    max-width: 18.0625rem
+  }
+}
+@media (max-width:24.375em) {
+  .hero .card__title {
+    max-width: 12.9375rem
+  }
+}
 @media (min-width:20em) and (max-width:87.5em) {
   @supports (gap:clamp(0.9375rem ,0.8449074074rem + 0.462962963vw ,1.25rem)) {
     .spollers {
