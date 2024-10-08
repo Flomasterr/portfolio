@@ -16,6 +16,4 @@ https://flomasterr.github.io/portfolio/Elegant(e-commerce-design)/index.html
 
 https://flomasterr.github.io/portfolio/foodieland(cooking-template)/index.html
 
-https://flomasterr.github.io/portfolio/main/index.html
-
 https://flomasterr.github.io/portfolio/Hair-Stylist/index.html
