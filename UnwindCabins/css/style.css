@@ -981,9 +981,6 @@ h6 {
   position: fixed;
   z-index: 50;
   width: 100%;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
 }
 
 .header__container {
@@ -1032,6 +1029,9 @@ h6 {
 }
 
 .header._header-show {
+  -webkit-transition: top 2s ease 1s;
+  -o-transition: top 2s ease 1s;
+  transition: top 2s ease 1s;
   top: 0;
 }
 
@@ -2224,10 +2224,9 @@ h6 {
   border-radius: 0.25rem;
   padding: 2.0625rem 1.84375rem 2.0625rem 1.71875rem;
   opacity: 0;
-  scale: 0;
-  -webkit-transition: opacity 1s ease 3.5s, scale 1s ease 3.5s;
-  -o-transition: opacity 1s ease 3.5s, scale 1s ease 3.5s;
-  transition: opacity 1s ease 3.5s, scale 1s ease 3.5s;
+  -webkit-transition: opacity 1s ease 3.5s;
+  -o-transition: opacity 1s ease 3.5s;
+  transition: opacity 1s ease 3.5s;
 }
 
 @supports (top: clamp( -3.75rem , -1.7024204244rem  +  -3.050397878vw , -2.3125rem )) {
@@ -3400,15 +3399,15 @@ h6 {
 
 .faq .spollers {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 680px;
-          flex: 0 1 680px;
+      -ms-flex: 0 1 42.5rem;
+          flex: 0 1 42.5rem;
 }
 
 .faq .spollers__item {
   background: #f5b963;
-  border: 1px solid #bec2d9;
-  -webkit-box-shadow: 0px 2px 4px #d1dfda;
-          box-shadow: 0px 2px 4px #d1dfda;
+  border: 0.0625rem solid #bec2d9;
+  -webkit-box-shadow: 0px 0.125rem 0.25rem #d1dfda;
+          box-shadow: 0px 0.125rem 0.25rem #d1dfda;
   border-radius: 0.375rem;
   width: 100%;
   scale: 0;
