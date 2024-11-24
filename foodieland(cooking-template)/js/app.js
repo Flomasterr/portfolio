@@ -5378,7 +5378,8 @@
                 },
                 on: {
                     afterInit: function() {
-                        this.el.style.scale = "1";
+                        this.el.style.scale = 1;
+                        this.el.style.opacity = 1;
                     }
                 }
             });
@@ -5400,7 +5401,7 @@
                     enabled: true
                 },
                 mousewheel: {
-                    enabled: true
+                    enabled: false
                 },
                 on: {}
             });

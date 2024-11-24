@@ -820,8 +820,10 @@ h6 {
 }
 
 .header._header-scroll {
+  -webkit-transition: top 2.3s ease 0s;
+  transition: top 2.3s ease 0s;
   position: fixed;
-  top: -200%;
+  top: -100%;
 }
 
 .header._header-show {
