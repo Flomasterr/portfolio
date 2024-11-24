@@ -2550,7 +2550,7 @@
             }));
         }
     }), 0);
-    window["FLS"] = true;
+    window["FLS"] = false;
     isWebp();
     addLoadedClass();
     menuInit();

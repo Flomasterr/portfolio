@@ -334,6 +334,8 @@ h6 {
 }
 
 .project-structure__link {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,12 +593,12 @@ h6 {
 
 .header._header-scroll {
   position: fixed;
-  top: -200%;
+  top: -100%;
 }
 
 .header._header-show {
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: top 2s ease 0s;
+  transition: top 2s ease 0s;
   top: 0;
   background-color: rgba(3, 3, 3, 0.7);
 }
@@ -1087,9 +1089,10 @@ html.loaded .hero__button {
 }
 
 .testimonials__card {
-  scale: 0;
-  -webkit-transition: scale 0.9s ease 0s;
-  transition: scale 0.9s ease 0s;
+  scale: 0.7;
+  opacity: 0;
+  -webkit-transition: scale 0.9s ease 0s, opacity 0.9s ease 0s;
+  transition: scale 0.9s ease 0s, opacity 0.9s ease 0s;
   background: #202b37 url("../img/testimonials/bg-decor.svg") right/contain no-repeat;
   padding: 2rem;
   display: -webkit-box;
@@ -1106,6 +1109,7 @@ html.loaded .hero__button {
 
 .testimonials__card._watcher-view {
   scale: 1;
+  opacity: 1;
 }
 
 .testimonials__avatar {
@@ -1771,7 +1775,8 @@ html.loaded .hero__button {
   }
 
   .project-structure__link:hover {
-    padding: 0.625rem 1.25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
     border-radius: 0.5rem;
     background-color: #1A75FF;
     color: #FFF;
