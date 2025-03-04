@@ -19,3 +19,5 @@ https://flomasterr.github.io/portfolio/foodieland(cooking-template)/index.html
 https://flomasterr.github.io/portfolio/Hair-Stylist/index.html
 
 https://flomasterr.github.io/portfolio/HolydayResort/index.html
+
+https://flomasterr.github.io/portfolio/HomeDecor/index.html
