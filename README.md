@@ -21,3 +21,5 @@ https://flomasterr.github.io/portfolio/Hair-Stylist/index.html
 https://flomasterr.github.io/portfolio/HolydayResort/index.html
 
 https://flomasterr.github.io/portfolio/HomeDecor/index.html
+
+https://flomasterr.github.io/portfolio/bed-shop/index.html
