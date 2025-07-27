@@ -1,0 +1,15 @@
+<svg width="16.000000" height="19.625000" viewBox="0 0 16 19.625" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<linearGradient x1="-2.352705" y1="-0.484387" x2="15.815403" y2="20.344395" id="paint_linear_1_43_0" gradientUnits="userSpaceOnUse">
+			<stop offset="0.270833" stop-color="#A3A3A3"/>
+			<stop offset="0.412103" stop-color="#CCCCCC"/>
+			<stop offset="0.551716" stop-color="#FFFFFF"/>
+			<stop offset="0.677083" stop-color="#CCCCCC"/>
+			<stop offset="0.833333" stop-color="#A3A3A3"/>
+		</linearGradient>
+	</defs>
+	<path id="Vector" d="M8 10C8.54 10 9.02 9.8 9.41 9.41C9.8 9.02 10 8.55 10 8C10 7.44 9.8 6.97 9.41 6.58C9.02 6.19 8.54 6 8 6C7.45 6 6.97 6.19 6.58 6.58C6.19 6.97 6 7.44 6 8C6 8.55 6.19 9.02 6.58 9.41C6.97 9.8 7.45 10 8 10ZM8 19.62C7.86 19.62 7.73 19.6 7.6 19.54C7.46 19.5 7.35 19.43 7.25 19.35C4.81 17.2 3 15.2 1.79 13.36C0.6 11.52 0 9.8 0 8.19C0 5.69 0.8 3.7 2.41 2.22C4.02 0.74 5.88 0 8 0C10.11 0 11.97 0.74 13.58 2.22C15.19 3.7 16 5.69 16 8.19C16 9.8 15.4 11.52 14.2 13.36C13 15.2 11.18 17.2 8.75 19.35C8.64 19.43 8.53 19.5 8.39 19.54C8.26 19.6 8.13 19.62 8 19.62Z" fill="url(#paint_linear_1_43_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>
